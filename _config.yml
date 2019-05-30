@@ -1,6 +1,6 @@
 collections:
 
-  stone:
+  gamble:
     output: true
     permalink: /:name
 
