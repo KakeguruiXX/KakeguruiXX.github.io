@@ -1,0 +1,16 @@
+collections:
+
+  stone:
+    output: true
+    permalink: /:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "gamble"
+    values:
+      layout: "manga"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
