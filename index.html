@@ -27,6 +27,7 @@ h2 {
 }
 
 .block__link_subtitle {
+	font-family: 'Major Mono Display', monospace;
 	font-size: 1.3em;
 }
 
@@ -79,7 +80,7 @@ h2 {
 
 	{% assign filename = chapter.relative_path | replace: chapter.collection, '' | replace: '/', ''  | replace: '_', '' | replace: '.md', '' %}
 
-	<a class="block__link" href="{{ chapter.url }}" target="_blank" data-img="assets/{{chapter.collection}}/{{filename}}/01.jpg">
+	<a class="block__link" href="{{ chapter.url }}" target="_blank" data-img="assets/{{chapter.collection}}/{{filename}}/001.png">
 
 		{% capture firstchar %}{{ filename | slice: 0 }}{% endcapture %}
 
@@ -93,7 +94,7 @@ h2 {
 		{% assign filename = filename | replace_first: '0', '' %}
 		{% endif %}
 
-		<span class="block__link_title">CHAPTER {{ filename }}</span></br><span class="block__link_subtitle">Z={{filename}}</span></a>
+		<!-- <span class="block__link_title">CHAPTER {{ filename }}</span></br> --><span class="block__link_subtitle">cHApteR {{filename}}</span></a>
 
 	{% endfor %}
 </div>
