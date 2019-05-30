@@ -94,7 +94,7 @@ h2 {
 		{% assign filename = filename | replace_first: '0', '' %}
 		{% endif %}
 
-		<!-- <span class="block__link_title">CHAPTER {{ filename }}</span></br> --><span class="block__link_subtitle">cHApteR {{filename}}</span></a>
+		<!-- <span class="block__link_title">CHAPTER {{ filename }}</span></br> --><span class="block__link_subtitle">cHApteR {{filename}} {{chapter.name}}</span></a>
 
 	{% endfor %}
 </div>
