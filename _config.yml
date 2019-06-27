@@ -4,12 +4,21 @@ collections:
     output: true
     permalink: /:name
 
+  twin:
+    output: true
+    permalink: /twin/:name
+
 defaults:
   - scope:
       path: ""
       type: "gamble"
     values:
       layout: "manga"
+  - scope:
+      path: ""
+      type: "twin"
+    values:
+      layout: "manga-twin"
   - scope:
       path: ""
     values:
